@@ -70,7 +70,7 @@ module GovukTechDocs
             output +=
               single_page_table_of_contents(
                 content,
-                url: resource.url,
+                url: ".#{resource.url}",
                 max_level: config[:tech_docs][:max_toc_heading_level],
               )
           end
