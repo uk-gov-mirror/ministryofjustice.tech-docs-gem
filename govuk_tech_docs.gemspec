@@ -45,11 +45,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency "middleman-search-gds"
   spec.add_dependency "nokogiri"
   spec.add_dependency "redcarpet", "~> 3.3.2"
-  spec.add_dependency "openapi3_parser", "~> 0.5.0"
+  spec.add_dependency "openapi3_parser", "~> 0.9.2"
   spec.add_dependency "pry"
 
 
-  spec.add_development_dependency "bundler", "~> 2.1.4"
+  spec.add_development_dependency "bundler", "~> 2.3.3"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "capybara", "~> 2.18.0"
   spec.add_development_dependency "rubocop-govuk", "~> 1.0.0"
