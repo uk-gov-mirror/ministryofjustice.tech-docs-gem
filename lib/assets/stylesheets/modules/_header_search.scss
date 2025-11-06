@@ -91,7 +91,6 @@ $header-search-input-size: 35px;
   height: $header-search-input-size;
   margin: 0;
   padding: govuk-spacing(1) govuk-spacing(2);
-  padding-right: $header-search-input-size + 5px;
   border: 2px solid govuk-colour("mid-grey");
   font-size: 16px;  // Prevent zoom on mobile
 
@@ -101,7 +100,6 @@ $header-search-input-size: 35px;
 
   @include govuk-media-query($until: tablet) {
     width: 100%;
-    width: calc(100% - #{$header-search-input-size});
   }
 
   &:focus {
@@ -111,35 +109,7 @@ $header-search-input-size: 35px;
   }
 }
 
-.header-search__button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: 0;
-  background-color: govuk-colour('blue');
-  color: #fff;
-  cursor: pointer;
-  padding: 0;
-  width: $header-search-input-size;
-  height: 100%;
-  background-image: image-url('/images/search-button.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-  text-indent: -9999px;
-  overflow: hidden;
-
-  &:hover {
-    background-color: govuk-colour("dark-blue");
-  }
-
-  &:focus {
-    outline: $govuk-focus-width solid $govuk-focus-colour;
-    outline-offset: 0;
-    box-shadow: inset 0 0 0 2px govuk-colour("black");
-  }
-}
+// Search button removed - search input only
 
 // Adjust the header wrapper to ensure proper layout
 .app-header {
